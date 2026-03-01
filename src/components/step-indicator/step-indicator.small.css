@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+  .step-indicator {
+    padding: 0 0 22px 0;
+    gap: 8px;
+  }
+
+  .step-indicator__label {
+    font-size: 14px;
+  }
+
+  .step-indicator__counter {
+    font-size: 12px;
+  }
+}

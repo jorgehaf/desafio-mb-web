@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+  .step-personal-data__title {
+    font-size: 18px;
+  }
+
+  .step-personal-data__row {
+    grid-template-columns: 1fr;
+  }
+
+  .step-personal-data__actions {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .step-personal-data__actions .base-button {
+    width: 100%;
+  }
+}

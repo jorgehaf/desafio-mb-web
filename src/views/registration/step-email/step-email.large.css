@@ -1,0 +1,34 @@
+.step-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step-email__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 4px 0;
+}
+
+.step-email__subtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin: 0 0 8px 0;
+}
+
+.step-email__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step-email__actions {
+  display: flex;
+  justify-content: stretch;
+  padding-top: 8px;
+}
+
+.step-email__actions .base-button {
+  width: 100%;
+}

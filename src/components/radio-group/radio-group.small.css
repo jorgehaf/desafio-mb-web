@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+  .radio-group__options {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .radio-group__option {
+    padding: 10px 14px;
+  }
+
+  .radio-group__option-label {
+    font-size: 13px;
+  }
+}

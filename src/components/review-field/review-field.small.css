@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+  .review-field__value {
+    font-size: 14px;
+  }
+
+  .review-field__label {
+    font-size: 11px;
+  }
+}

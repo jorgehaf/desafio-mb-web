@@ -1,0 +1,155 @@
+/* Design Tokens (CSS Custom Properties) */
+:root {
+  /* Cores primárias */
+  --color-primary: #e8a020;
+  --color-primary-hover: #cf8e18;
+  --color-primary-alpha: rgba(232, 160, 32, 0.15);
+  --color-primary-subtle: rgba(232, 160, 32, 0.08);
+
+  /* Texto */
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #5a5a72;
+  --color-text-disabled: #aaaab5;
+  --color-text-placeholder: #bbbbc5;
+
+  /* Superfícies */
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f7f7f9;
+  --color-surface-hover: #f2f2f5;
+
+  /* Bordas */
+  --color-border: #e0e0ea;
+
+  /* Feedback */
+  --color-error: #d63031;
+  --color-error-alpha: rgba(214, 48, 49, 0.12);
+  --color-error-subtle: rgba(214, 48, 49, 0.06);
+
+  --color-success: #00b894;
+  --color-success-subtle: rgba(0, 184, 148, 0.1);
+
+  --color-warning: #f39c12;
+
+  /* Raios de borda */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* Sombras */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  /* Transições */
+  --transition-default: 0.2s ease;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* App Layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.app-layout__main {
+  width: 100%;
+  max-width: 440px;
+}
+
+.app-layout__card {
+  background-color: var(--color-surface);
+  padding: 0;
+  width: 100%;
+}
+
+.app-layout__brand {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 28px;
+}
+
+.app-layout__brand-text {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+}
+
+.app-layout__step-content {
+  overflow: hidden;
+}
+
+/* Step Transition */
+.step-fade-enter-active,
+.step-fade-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.step-fade-enter-from {
+  opacity: 0;
+  transform: translateX(12px);
+}
+
+.step-fade-leave-to {
+  opacity: 0;
+  transform: translateX(-12px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .app-layout {
+    padding: 24px 20px;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .app-layout__main {
+    max-width: 100%;
+  }
+
+  .app-layout__brand {
+    margin-bottom: 20px;
+  }
+
+  .app-layout__brand-text {
+    font-size: 22px;
+  }
+}

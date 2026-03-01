@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+  .step-review__title {
+    font-size: 18px;
+  }
+
+  .step-review__row {
+    grid-template-columns: 1fr;
+  }
+
+  .step-review__actions {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .step-review__actions .base-button {
+    width: 100%;
+  }
+}

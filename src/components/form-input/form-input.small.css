@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+  .form-input__label {
+    font-size: 13px;
+  }
+
+  .form-input__field {
+    height: 48px;
+    font-size: 16px; /* evita zoom automático no iOS */
+    padding: 0 14px;
+  }
+
+  .form-input__error {
+    font-size: 11px;
+  }
+}
